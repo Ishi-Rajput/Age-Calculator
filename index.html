@@ -1,0 +1,53 @@
+<!--!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Age Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Age Calculator</h1>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+    <button onclick="calculateAge()">Calculate</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Age Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Age Calculator</h1>
+    
+    <div class="input-container">
+      <label for="years">Years:</label>
+      <input type="number" id="years" min="0" placeholder="Enter years">
+    </div>
+
+    <div class="input-container">
+      <label for="months">Months:</label>
+      <input type="number" id="months" min="0" max="11" placeholder="Enter months">
+    </div>
+
+    <div class="input-container">
+      <label for="days">Days:</label>
+      <input type="number" id="days" min="0" max="30" placeholder="Enter days">
+    </div>
+
+    <button onclick="calculateAge()">Calculate</button>
+
+    <div id="result" class="result-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
